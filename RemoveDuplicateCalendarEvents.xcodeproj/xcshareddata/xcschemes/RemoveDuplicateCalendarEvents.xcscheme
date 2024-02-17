@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E43BFB7627E204A0009A22CA"
-               BuildableName = "RemoveDuplicateCalendarEvents"
+               BuildableName = "rdce"
                BlueprintName = "RemoveDuplicateCalendarEvents"
                ReferencedContainer = "container:RemoveDuplicateCalendarEvents.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E43BFB7627E204A0009A22CA"
-            BuildableName = "RemoveDuplicateCalendarEvents"
+            BuildableName = "rdce"
             BlueprintName = "RemoveDuplicateCalendarEvents"
             ReferencedContainer = "container:RemoveDuplicateCalendarEvents.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E43BFB7627E204A0009A22CA"
-            BuildableName = "RemoveDuplicateCalendarEvents"
+            BuildableName = "rdce"
             BlueprintName = "RemoveDuplicateCalendarEvents"
             ReferencedContainer = "container:RemoveDuplicateCalendarEvents.xcodeproj">
          </BuildableReference>
