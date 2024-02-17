@@ -94,7 +94,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					E43BFB7627E204A0009A22CA = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -165,9 +165,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -227,9 +229,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -253,7 +257,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = RemoveDuplicateCalendarEvents/RemoveDuplicateCalendarEvents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6W83B2TMMY;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNW4VSV736;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = rdce;
 				SWIFT_VERSION = 5.0;
@@ -265,7 +270,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = RemoveDuplicateCalendarEvents/RemoveDuplicateCalendarEvents.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6W83B2TMMY;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = HNW4VSV736;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = rdce;
 				SWIFT_VERSION = 5.0;

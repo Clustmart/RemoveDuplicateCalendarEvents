@@ -1,14 +1,14 @@
 import EventKit
 import Foundation
 
-/// The combined identifiers for a unique event in a given calendar.
+/// Define the identifiers for a unique event based on startDate and title.
 struct UniqueEventIdentifier: Hashable {
-    let calendarIdentifier: String
-    let eventExternalIdentifier: String
+    let startDate: Date
+    let title: String
     
     init(event: EKEvent) {
-        calendarIdentifier = event.calendar.calendarIdentifier
-        eventExternalIdentifier = event.calendarItemExternalIdentifier
+        self.startDate = event.startDate
+        self.title = event.title
     }
 }
 
@@ -41,10 +41,14 @@ events.sort { e1, e2 in e1.startDate! < e2.startDate }
 do {
     var uniqueEventIdentifiers = Set<UniqueEventIdentifier>()
     for event in events {
-        if event.calendar.allowsContentModifications, !uniqueEventIdentifiers.insert(.init(event: event)).inserted {
-            print(event.startDate!, event.title!)
+        let eventIdentifier = UniqueEventIdentifier(event: event) // Create this to access calendarIdentifier easily
+        if event.calendar.allowsContentModifications, !uniqueEventIdentifiers.insert(eventIdentifier).inserted {
+            print("DEL:", event.startDate!, event.title!)
             if shouldRemove { try store.remove(event, span: .futureEvents, commit: false) }
         }
+//        else {
+//            print("    ","Calendar:", event.calendar.calendarIdentifier, event.startDate!, event.title!)
+//        }
     }
     if shouldRemove { try store.commit() }
 } catch {
@@ -52,4 +56,3 @@ do {
     exit(2)
 }
 print("Done.")
-
